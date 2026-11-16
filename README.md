@@ -6,6 +6,16 @@ This repository contains for DM suite of fonts: Sans, Serif Text and Serif Displ
 
 This fork of [googlefonts/dm-fonts](https://github.com/googlefonts/dm-fonts) publishes DM Sans with tabular digits that line amounts up in a column. The fonts keep the family name DM Sans, so a tool that takes the release serves it in place of the Google Fonts copy.
 
+## Why This Fork Exists
+
+DM Sans is the typeface of the LawnStarter design system. The DM Sans files that Google Fonts distributes have no tabular digits, so the digits of amounts set in a column do not line up, and the [request for them](https://github.com/googlefonts/dm-fonts/issues/25) has been open upstream since 2023.
+
+A second typeface for numbers would put two designs side by side in every amount. The fork keeps one typeface instead: it gives DM Sans the digits of DM Mono, its companion family, behind the tabular figures feature, and publishes the result as font files that the design system, the apps and Figma can install in place of the Google Fonts copy.
+
+The fork changes nothing upstream ships. The release is built from the exported fonts, and the sources stay as upstream has them, so the fork can follow upstream.
+
+## What the Release Holds
+
 The release holds every style of DM Sans, static and variable, as TrueType and WOFF2 files. It is built from the fonts exported under [Sans/fonts](Sans/fonts) and from the DM Mono files under [Mono](Mono), with the differences that [FONTLOG.txt](FONTLOG.txt) records:
 
 - With the tabular figures feature (`tnum`) on, every digit takes the same width and the zero is plain. In the Light, Regular and Medium styles, upright and italic, the digits one to nine are the digits of [DM Mono](https://github.com/googlefonts/dm-mono), and the zero is the plain zero of DM Sans at the same width, since DM Mono draws only a slashed zero. Each of those fonts carries the DM Mono copyright notice beside its own.
