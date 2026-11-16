@@ -1,0 +1,21 @@
+[project]
+name = "dm-fonts-release"
+version = "0"
+description = "Builds the LawnStarter release of DM Sans from the exported fonts."
+requires-python = ">=3.12"
+dependencies = [
+  "fonttools[woff]>=4.55",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8",
+  "uharfbuzz>=0.45",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
+testpaths = ["tests"]

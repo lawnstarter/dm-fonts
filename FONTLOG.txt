@@ -1,0 +1,24 @@
+DM Sans, LawnStarter release
+
+This release is a Modified Version of DM Sans under the SIL Open Font License 1.1 (OFL.txt).
+The Original Version is https://github.com/googlefonts/dm-fonts, whose copyright notice the
+fonts keep. The release holds every weight, upright and italic, static and variable, as
+TrueType and WOFF2 files. The optical size statics and the OpenType CFF files are left out.
+
+In the Light, Regular and Medium styles, upright and italic, the tabular digits one to nine
+are the digits of DM Mono, https://github.com/googlefonts/dm-mono, under the SIL Open Font
+License 1.1 (OFL-DMMono.txt). Each of those fonts carries the DM Mono copyright notice beside
+its own.
+
+What differs from the Original Version:
+
+- In the six styles DM Mono draws, the tabular digits one to nine are those of DM Mono, and the
+  tabular zero is the plain zero of DM Sans narrowed to the DM Mono width. Those ten glyphs
+  carry no TrueType hinting instructions.
+- The tabular figures feature (tnum) changes the ten digits and nothing else. The comma, the
+  period, the colon, the semicolon and the space keep their proportional width.
+- No glyph kerns against a tabular digit.
+- The version string of each font ends with ";lawnstarter" and the release version.
+
+The slashed zero and the alternates of the stylistic set ss09 are as in the Original Version.
+With the tabular figures feature off, text is set as in the Original Version.
